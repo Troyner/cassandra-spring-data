@@ -13,7 +13,11 @@ CREATE KEYSPACE dev
    'class' : 'SimpleStrategy', 
    'replication_factor' : 1 
   };
+
 USE dev;
+
 create table dev.god (id uuid primary key, name varchar, power varchar);
+
 insert into dev.god (id, name, power) values (now(), 'Cthulhu', 'Unknown');
+
 insert into dev.god (id, name, power) values (now(), 'Nyarlathotep', 'Tentacles');
